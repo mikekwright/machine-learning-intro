@@ -1,0 +1,7 @@
+pip==9.0.1
+tensorflow==1.1.0
+scikit-learn==0.18.1
+jupyter==1.0.0
+pandas==0.20.1
+matplotlib==2.0.2
+

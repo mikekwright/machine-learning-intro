@@ -1,0 +1,5 @@
+.venv
+data/
+*.sw*
+.ipynb_checkpoints/
+

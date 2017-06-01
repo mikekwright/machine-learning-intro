@@ -8,14 +8,20 @@ Machine Learning - An Introduction
 3. Create a virtual environment `python3 -m venv .venv`  
 4. Activate the virtual environment `source .venv/bin/activate`  
 5. Install python dependencies `pip install -r requirements.txt`  
-6. Start the notebook `jupyter notebook`   
+6. Download the data `data/pull-data.sh`  
+7. Start the notebook `jupyter notebook`   
 
+Or just use docker  
+
+    docker run -it --rm -p 8888:8888 -v $PWD/notebook:/notebook mikewright/ml-intro
+    # Note: The password is mlintro
 
 ## References
 
 * [Dataquest.io](http://dataquest.io)    
 * [Inside Airbnb](http://insideairbnb.com/get-the-data.html)   
 * [Introducing Data Science](https://www.manning.com/books/introducing-data-science)  
+* [Tensorflow Tutorial](https://www.analyticsvidhya.com/blog/2016/10/an-introduction-to-implementing-neural-networks-using-tensorflow/)   
 
 ### DataSet
 

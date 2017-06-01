@@ -9,6 +9,9 @@ ENTRYPOINT ["/usr/bin/tini", "--"]
 ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
+ADD data/pull-data.sh /data/pull-data.sh
+RUN /data/pull-data.sh
+
 ADD docker/jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
 
 EXPOSE 8888
